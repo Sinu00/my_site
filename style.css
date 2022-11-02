@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Class */
+  body {
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    font-family: "Courier New", Courier, monospace;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #262626;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Site Navigation */
+  .main-header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 4rem;
+    justify-content: space-between;
+  }
+  
+  .main-menu {
+    display: flex;
+  }
+  
+  .main-menu li {
+    padding-left: 1.5rem;
+    font-size: 15px;
+    padding: 0.5rem;
+  }
+  
+  .sign-up a {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  /* Site Content */
+  .banner {
+    width: 100%;
+    display: flex;
+    margin-top: 2.5rem;
+    align-items: center;
+  }
+  
+  .content {
+    width: 50%;
+  }
+  
+  .content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .content p {
+    line-height: 1.5;
+    width: 60%;
+    line-break: loose;
+  }
+  
+  .join-btn {
+    margin-top: 2.5rem;
+  }
+  
+  .join-btn .try-btn {
+    padding: 0.6rem;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+    text-transform: uppercase;
+  }
+  
+  .join-btn .join-btn {
+    padding: 0.6rem;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    text-transform: uppercase;
+  }
+  
+  .illustrator {
+    width: 50%;
+  }
+  
+  .illustrator img {
+    width: 100%;
+  }
+  
+  /* Responsive Layout */
+  @media screen and (max-width: 650px) {
+    .main-header {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .sign-up {
+      display: none;
+    }
+  
+    .banner {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  
+    .content {
+      width: 100%;
+    }
+  
+    .content p {
+      line-height: 1.5;
+      width: 100%;
+      line-break: loose;
+    }
+  
+    .illustrator {
+      margin-top: 2rem;
+      width: 80%;
+    }
+  
+    .join-btn {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+  }
+  
